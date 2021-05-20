@@ -2,19 +2,11 @@
 * Copyright (C) 2019 WEEDO3D
 * Author: perron@163.com
 */
-#pragma once
 
-#ifndef __AVR_ATmega2560__
-  #error "Oops! Select 'Arduino/Genuino Mega or Mega 2560' in 'Tools > Board.'"
+#ifndef BOARD_NAME
+  #define BOARD_NAME "WEEDO 62B"
 #endif
 
-
-//#ifndef BOARD_NAME
-//  #define BOARD_NAME "WEEDO 62B"
-//#endif
-#define BOARD_INFO_NAME "MP Maker Ulti 2"
-#define DEFAULT_MACHINE_NAME "ULTI2 "
-#define BOARD_WEBSITE_URL    "https://tinyurl.com/yyxw7se7"
 #define LARGE_FLASH true
 
 // X Motor
@@ -81,7 +73,7 @@
 #define DOGLCD_A0  27
 #define DOGLCD_CS  29
 #define LCD_RESET_PIN  25
-#define LCD_CONTRAST 50
+#define LCD_CONTRAST 255
 
 // Encoder
 #define BTN_EN1 33
